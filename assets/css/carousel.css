@@ -1,0 +1,163 @@
+.container1 {
+  position: relative;
+  width: 70%;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  margin: 0;
+  opacity: 0;
+  transition: 1s ease-in-out;
+  overflow: hidden;
+}
+
+.slide img {
+  width: 100%;
+  height: 300px;
+}
+
+.carouselPlace {
+  padding-top: 60px !important;
+}
+
+.dots_container {
+  display: flex;
+  margin: 5px auto;
+  width: fit-content;
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.dots {
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  background: #bdbdbd;
+  margin: 4px;
+}
+
+.dots:hover {
+  background: #696969 !important;
+}
+
+@media screen and (max-width: 1030px) {
+  .carouselPlace {
+    padding-top: 120px !important;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .carouselPlace {
+    height: 35vh;
+  }
+  .container1 {
+    top: -45%;
+  }
+  .carouselPlace {
+    padding-top: 90px !important;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .slide {
+    height: fit-content;
+  }
+  .container1 {
+    height: 200px;
+  }
+}
+
+@media screen and (max-width: 416px) {
+  /* .carouselPlace {
+    height: 40vh;
+  } */
+  .container1 {
+    top: -0%;
+  }
+  .slide img {
+    width: 100%;
+    height: 160px;
+  }
+  .carouselPlace {
+    padding-top: 100px !important;
+  }
+}
+@media (max-width: 450px) and (min-height: 800px) {
+  .container1 {
+    top: -0%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .container1 {
+    top: -0%;
+  }
+}
+
+@media screen and (max-width: 361px) {
+  /* .carouselPlace {
+    height: 45vh;
+  } */
+  .container1 {
+    top: -0%;
+  }
+  .slide img {
+    width: 100%;
+    height: 150px;
+  }
+  .carouselPlace {
+    padding-top: 80px !important;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .carouselPlace {
+    padding-top: 110px !important;
+  }
+}
+@media screen and (max-width: 320px) {
+  .slide img {
+    width: 100%;
+    height: 120px;
+  }
+  .carouselPlace {
+    padding-top: 100px !important;
+  }
+}
+@media screen and (max-width: 281px) {
+  .carouselPlace {
+    padding-top: 130px !important;
+  }
+  .slide img {
+    width: 100%;
+    height: 100px;
+  }
+}
+
+@media (max-width: 380px) and (min-height: 720px) {
+  .container1 {
+    top: -0% !important;
+  }
+}
+@media (max-width: 380px) and (min-height: 800px) {
+  .container1 {
+    top: -0% !important;
+  }
+}
+@media (max-width: 950px) and (min-height: 1100px) {
+  .carouselPlace {
+    height: 35vh;
+  }
+  .container1 {
+    top: -0%;
+  }
+  .slide img {
+    width: 100%;
+    height: 300px;
+  }
+}
