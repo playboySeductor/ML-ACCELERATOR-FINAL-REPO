@@ -7,4 +7,5 @@
 - HTML
 - CSS
 - JS
-- Bootstrap
+- scss
+- Bootstrap 
