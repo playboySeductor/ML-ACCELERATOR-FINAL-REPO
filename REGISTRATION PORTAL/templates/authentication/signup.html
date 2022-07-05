@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <style>
+        #dec{
+            margin-left:30% ;
+            margin-right: 30%;
+            margin-top: 10%;
+        }
+    </style>
+</head>
+<body>
+    <div id="dec">
+    <center style="background-color: antiquewhite;padding: 35px;">
+        {% for message in messages %}
+        <div class="alert alert-{{message.tags}} alert-dismissible fade show" role="alert">
+            <strong>Message:</strong> {{message}}
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times</span>
+        </button>
+        </div>
+        {% endfor %}
+    <h3>SIGN UP IN OUR PORTAL</h3>
+   
+    <form action="/signup" method="POST" style="display: inline-grid;">
+        {% csrf_token %}
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" placeholder="enter username (only letters and numbers" required>
+        <br>
+        <label for="username">First Name</label>
+        <input type="text" id="fname" name="fname" placeholder="enter firstname" required>
+        <br>
+        <label for="username">Last Name</label>
+        <input type="text" id="lname" name="lname" placeholder="enter lastname " required>
+        <br>
+        <label for="username">Email Address</label>
+        <input type="email" id="email" name="email" placeholder="enter email " required>
+        <br>
+        <label for="username">Password</label>
+        <input type="password" id="passw" name="passw" placeholder="enter password" required>
+        <br>
+        <label for="username">ConfirmPassword</label>
+        <input type="password" id="cp" name="cp" placeholder="re-enter password" required>
+        <br>
+        <button type="submit">Sign Up</button>
+        
+    </form>
+    </center>
+</div>
+</body>
+</html>
